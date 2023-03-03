@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: sveltekit-supabase-todo
+    build: .
+    volumes:
+      - .:/home/kks/sveltekit-supabase-todo
+    ports:
+      - "5173:5173"
+    tty: true
