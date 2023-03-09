@@ -1,0 +1,8 @@
+.switch {
+  color: lightskyblue;
+  cursor: pointer;
+}
+
+.switch:hover {
+  text-decoration: underline;;
+}
