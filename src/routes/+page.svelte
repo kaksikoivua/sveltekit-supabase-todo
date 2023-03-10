@@ -26,7 +26,7 @@
     try {
       const { data, error } = await supabase
         .from('todos')
-        .insert([{ task: newTask }]);
+        .insert([{ task: newTask, user_id: $user.id }]);
       await getAllTodos();
       newTask = '';
     } catch (err) {
